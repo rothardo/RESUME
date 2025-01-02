@@ -1,0 +1,215 @@
+%-------------------------
+% Resume in Latex
+% Author: Ashwin Temkar
+% Based off of: https://github.com/sb2nov/resume
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\usepackage[scale=0.90,lf]{FiraSans}
+
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeNewSubheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Ashwin Temkar} \hfill \small Pune, Maharashtra \\ \vspace{1pt}
+    \small +91 8080683815 $|$ \href{mailto:ashwintemkar@gmail.com}{\underline{ashwintemkar@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/ashwintemkar}{\underline{linkedin.com/in/ashwintemkar}} $|$
+    \href{https://github.com/rothardo}{\underline{github.com/rothardo}} $|$
+    \href{https://ashwintemkar.com}{\underline{ashwintemkar.com}}
+\end{center}
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item 
+    \textbf{Languages:} Java, JavaScript, TypeScript, SQL, HTML/CSS \\
+    \textbf{Frameworks \& Libraries:} Next.js, React.js, Node.js, Java EE (J2EE), JSF \\
+    \textbf{Databases \& ORM:} PostgreSQL, MySQL, Prisma \\
+    \textbf{Developer Tools:} Git, Docker, Bitbucket, Maven, Postman, REST APIs, JIRA, AWS, Bash}
+\end{itemize}
+
+\section{Professional Work Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Fullstack Engineer}{March 2024 - September 2024}
+      {\href{https://www.wisestep.com/}{\underline{Wisestep}} $|$ \href{https://pamgro.com/}{\underline{Pamgro}}}{Hyderabad, Telangana}
+      \resumeItemListStart
+        \resumeItem{Developed core B2B modules, including custom fields and timesheets, to \textbf{automate workflows}, resulting in \textbf{smoother data management} using Node.js, Prisma, PostgreSQL.}
+        \resumeItem{Built a\textbf{ centralized CSV export, sorting}, and revamped query filter, enhancing report accuracy and \textbf{cutting} manual intervention \textbf{effort by 50\%}.}
+        \resumeItem{Created \textbf{reusable} UI components with Next.js, React.js, boosting \textbf{user interaction}.}
+        \resumeItem{Fixed over \textbf{15+} critical bugs and optimized modules, enhancing system stability and reliability for end-users.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Software Engineer}{August 2023 - March 2024}
+      {\href{https://www.itlsco.com/}{\underline{ITLSCO LLP}}}{Pune, Maharashtra}
+      \resumeItemListStart
+        \resumeItem{Engineered \href{https://drive.google.com/file/d/1h4O9HmkL6QD-hmzP3Dcjr1HMfkEntxFf/view?usp=sharing}{\underline{SIMGILE}}, the suite of \textbf{12+ B2B} web apps, streamlining workflows and boosting startup-to-enterprise \textbf{efficiency by 40\%}.}
+        \resumeItem{Developed \textbf{collaborative tools} with cross-application integration, centralizing resources and improving team collaboration.}
+        \resumeItem{Designed a \textbf{scalable architecture} using J2EE, JPA, MySQL, and microservices, supporting seamless expansion.}
+        \resumeItem{Delivered financial tools for tracking CAPEX and OPEX, providing \textbf{real-time insights} for \textbf{stakeholders}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{May 2022 - July 2023}
+      {Company Name}{Location}
+      \resumeItemListStart
+        \resumeItem{Developed an IoT-based web application using J2EE and microservices architecture, improving system scalability.}
+        \resumeItem{Built Java EE microservices for transportation data management with GPS tracking integration.}
+        \resumeItem{Implemented CI/CD pipelines using Jenkins, reducing deployment time and improving efficiency.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{EDUCATOR ASSESSMENT SYSTEM} $|$ \emph{Express.js, Node.js, MySQL, ML}}{\href{https://github.com/rothardo/Student-Feedback-System}{\underline{GitHub}}}
+        \resumeItemListStart
+            \resumeItem{Developed a Node.js application with Express.js and MySQL, incorporating \textbf{AI-driven suggestions} for educator feedback.}
+            \resumeItem{Enhanced student-teacher communication, resulting in \textbf{25\% increase} in academic performance.}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Other Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {Administrator}{October 2021 - August 2022}
+        {GOOGLE DEVELOPER STUDENTS CLUB (GDSC), DYPIU}{Pune, Maharashtra}
+        \resumeItemListStart
+            \resumeItem{Facilitated over \textbf{10 events} and workshops for the GDSC club at DYPIU.}
+            \resumeItem{Mentored \textbf{300+ students}, enhancing technical skills and community engagement.}
+        \resumeItemListEnd
+
+    \resumeNewSubheading
+        {Open-Source Contributor}{Remote}
+        \resumeItemListStart
+            \resumeItem{Contributed to \href{https://github.com/apache/netbeans/pulls/rothardo}{\underline{Apache NetBeans}} and \href{https://github.com/excalidraw/excalidraw/pulls/rothardo}{\underline{Excalidraw}}, resolving \textbf{real-world issues}.}
+        \resumeItemListEnd
+
+    \resumeNewSubheading
+        {Freelance Web Developer}{Remote}
+        \resumeItemListStart
+            \resumeItem{Developed client websites, achieving traffic increases up to \textbf{2400\%} within one year.}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {\href{https://dypiu.ac.in}{\underline{D Y PATIL INTERNATIONAL UNIVERSITY}}}{Pune, Maharashtra}
+        {B.Tech in Computer Science, Major in Robotics and AI/ML; \textbf{CGPA: 8.05}}{August 2019 -- July 2023}
+\resumeSubHeadingListEnd
+
+\section{Certifications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item 
+    \textbf{Microsoft Azure:} {\href{https://www.credly.com/badges/f57b66c5-135e-4413-95e3-8ff6c7cf4f1a/public_url}{\underline{DP-900}}, 
+    \href{https://www.credly.com/badges/6fd63075-916c-4023-b718-f5e257fbacab/public_url}{\underline{AI-900}}, 
+    \href{https://www.credly.com/badges/57087f9a-9a7a-475d-bfd4-a098cce01b8c/public_url}{\underline{AZ-900}}, 
+    \href{https://www.credly.com/badges/bfeb1d47-d373-406f-8cca-fc3bbd63d13e/public_url}{\underline{PL-900}}, 
+    \href{https://www.credly.com/badges/bfeb1d47-d373-406f-8cca-fc3bbd63d13e/public_url}{\underline{SC-900}}} $|$
+    \textbf{Google:} \href{https://www.coursera.org/account/accomplishments/certificate/DKPVM85EUJHV}{\underline{Data Fundamentals}}}
+\end{itemize}
+
+\end{document}
