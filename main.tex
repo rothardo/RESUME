@@ -1,0 +1,243 @@
+%-------------------------
+% Resume in Latex
+% Author: Ashwin Temkar
+% Based off of: https://github.com/sb2nov/resume
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+% fixed width
+\usepackage[scale=0.90,lf]{FiraSans}
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underilne
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+% custom font: helvetica-style
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} 
+%% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% New command for more compact two-line sections
+\newcommand{\resumeNewSubheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Ashwin Temkar} \hfill \small Pune, Maharashtra \\ \vspace{1pt}
+    \small +91 8080683815 $|$ \href{mailto:ashwintemkar@gmail.com}{\underline{ashwintemkar@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/ashwintemkar}{\underline{linkedin.com/in/ashwintemkar}} $|$
+    \href{https://github.com/rothardo}{\underline{github.com/rothardo}} $|$
+    \href{https://ashwintemkar.com}{\underline{ashwintemkar.com}}
+\end{center}
+
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+    \item \textbf{Languages:} Java, JavaScript, TypeScript, SQL, HTML/CSS \\
+    \textbf{Frameworks \& Libraries:} Next.js, React.js, Node.js, Java EE (J2EE), JSF \\
+    \textbf{Databases \& ORM:} PostgreSQL, MySQL, Prisma \\
+    \textbf{Developer Tools:} Git, Docker, Bitbucket, Maven, Postman, REST APIs, JIRA, AWS, Bash
+    }
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Proffesional Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Fullstack Engineer}{March 2024 - September 2024}
+      {\href{https://www.wisestep.com/}{\underline{Wisestep}} $|$ \href{https://pamgro.com/}{\underline{Pamgro}}}{Hyderabad, Telangana}
+      \resumeItemListStart
+        \resumeItem{Developed core B2B modules, including custom fields and timesheets, to \textbf{automate workflows}, resulting in \textbf{smoother data managemen\textit{t}} using Node.js, Prisma, PostgreSQL.}
+        \resumeItem{Built a\textbf{ centralized CSV export, sorting}, and revamped query filter, enhancing report accuracy and \textbf{cutting} manual intervention \textbf{effort by 50\%}.}
+        \resumeItem{Created \textbf{reusable} UI components with Next.js, React.js, boosting \textbf{user interaction}.}
+        \resumeItem{Fixed over \textbf{15+} critical bugs and optimized modules, enhancing system stability and reliability for end-users.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Software Engineer}{August 2023 - March 2024}
+      {\href{https://www.itlsco.com/}{\underline{ITLSCO LLP}}}{Pune, Maharashtra}
+      \resumeItemListStart
+        \resumeItem{Engineered \href{https://drive.google.com/file/d/1h4O9HmkL6QD-hmzP3Dcjr1HMfkEntxFf/view?usp=sharing}{\underline{SIMGILE}}, the suite of \textbf{12+ B2B} web apps, streamlining workflows and boosting startup-to-enterprise \textbf{efficiency by 40\%}.}
+        \resumeItem{Developed \textbf{collaborative tools} (meeting agendas, project management, note-taking, and document repository) with cross-application integration, centralizing resources and improving team collaboration and \textbf{productivity}.}
+        \resumeItem{Designed a \textbf{scalable architecture} using J2EE, JPA, MySQL, and microservices, supporting seamless expansion and enabling \textbf{modularity}.}
+        \resumeItem{Delivered financial tools for tracking CAPEX and OPEX, providing \textbf{real-time insights} and improving \textbf{decision-making} for \textbf{stakeholders}.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{EDUCATOR ASSESSMENT SYSTEM (EAS)} $|$ \emph{Express.js, Node.js, MySQL, Machine Learning}}{\href{https://github.com/rothardo/Student-Feedback-System}{\underline {GitHub Link}}}
+          \resumeItemListStart
+            \resumeItem{Developed a robust Node.js application with Express.js and MySQL, incorporating \textbf{AI-driven suggestions} to create an \textbf{efficient feedback system} for educators.}
+            \resumeItem{Enhanced student-teacher communication through intelligent insights, resulting in a notable \textbf{25\% increase} in academic performance and \textbf{improved teaching} methods.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------OTHER EXPERIENCES-----------
+\section{Other Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Administrator}{October 2021 - August 2022}
+      {GOOGLE DEVELOPER STUDENTS CLUB (GDSC), DYPIU}{Pune, Maharashtra}
+      \resumeItemListStart
+        \resumeItem{Facilitated the successful execution of over\textbf{ 10 events} and workshops for the GDSC club at DYPIU.}
+        \resumeItem{Mentored a diverse cohort of \textbf{300+ students}, enhancing their technical skills and \textbf{community engagement}.}
+      \resumeItemListEnd
+
+    \resumeNewSubheading
+  {Open-Source Contributor}{Remote}
+  \resumeItemListStart
+    \resumeItem{Contributed to \textbf{open-source projects}, including resolving \textbf{real-world issues} for \href{https://github.com/apache/netbeans/pulls/rothardo}{\underline{Apache NetBeans}} and \href{https://github.com/excalidraw/excalidraw/pulls/rothardo}{\underline{Excalidraw}}, while actively contributing to assignments from various organizations.}
+  \resumeItemListEnd
+
+\resumeNewSubheading
+  {Freelance Web Developer}{Remote}
+\resumeItemListStart
+  \resumeItem{Developed multiple client websites, achieving traffic increases ranging from 5\% to an impressive \textbf{2400\%} within one year, while significantly enhancing \textbf{online visibilit}y and\textbf{ user engagement} through effective web design and \textbf{SEO}.}
+\resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://dypiu.ac.in}{\underline {D Y PATIL INTERNATIONAL UNIVERSITY}}}{Pune, Maharashtra}
+      {Bachelor of Technology in Computer Science, Major in Robotics and AI/ML; \textbf{CGPA: 8.05}}{August 2019 -- July 2023}
+  \resumeSubHeadingListEnd
+  
+%-----------CERTIFICATION-----------
+\section{Certifications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+    \item \textbf{Microsoft:} {Azure  \href{https://www.credly.com/badges/f57b66c5-135e-4413-95e3-8ff6c7cf4f1a/public_url}{\underline{DP-900}}, \href{https://www.credly.com/badges/6fd63075-916c-4023-b718-f5e257fbacab/public_url}{\underline{AI-900}}, 
+        \href{https://www.credly.com/badges/57087f9a-9a7a-475d-bfd4-a098cce01b8c/public_url}{\underline{AZ-900}}, 
+        \href{https://www.credly.com/badges/bfeb1d47-d373-406f-8cca-fc3bbd63d13e/public_url}{\underline{PL-900}}, 
+        \href{https://www.credly.com/badges/bfeb1d47-d373-406f-8cca-fc3bbd63d13e/public_url}{\underline{SC-900}}} \\
+    \textbf{Google:} { \href{https://www.coursera.org/account/accomplishments/certificate/DKPVM85EUJHV}{\underline{Google Data Fundamentals}}}
+    }
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
